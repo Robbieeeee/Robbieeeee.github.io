@@ -1,0 +1,304 @@
+<html>
+
+    <head>
+        <!-- Title -->
+        <h1>Poverty in Sub-Saharan Africa</h1>
+        
+        <!-- Links to CSS file -->
+        <link href="website.css" rel="stylesheet">
+        <!-- ?? -->
+        <script type="text/javascript" src="subsaharadata.json"></script>       
+    </head>
+
+    <body>          
+        <!-- Through the navigation bar the pages below can be accessed -->
+       <div class="topnav">
+            <a class="active" href="homepage.html">Home</a>
+            <a href="solution.html">Solution</a>
+            <a href="pictures.html">Pictures and Graphs</a>
+            <a href="contact.html">Contact</a>
+        </div>        
+       <br>
+       
+        <!-- First main division -->
+       <div id = "main">
+            
+         <!-- Second main division -->  
+        <div id = "content">
+            
+            <!-- Subtitle -->
+            <h2>Percent of the Population Living Below the Poverty Line in Sub-Saharan Africa vs the Rest of the World</h2>
+            
+            <!-- Text that explains the button -->
+            <p>Click to view the percentages by year.</p>
+            
+            <!-- When you click on the button data is displayed -->
+            <button onclick="SubSaharanAfrica()">Sub-Saharan Africa</button><button onclick="World()">World</button>
+            
+            <!-- Sets the size of the canvas -->
+            <canvas id="myCanvas" width="800" height="600"></canvas>
+
+            <!--- Sets the context of the canvas--->
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                // Calling the function World
+                World();
+                
+                //Draws the graph with statistics of average rate of World poverty
+                //This is the blue graph
+                function World() { 
+                    
+                    //Clears the rectangle
+                    ctx.clearRect(0,0,800,800); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len1 = (800/100) * 25.5;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,0,len1,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2002: 25.5%",01,36); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len2 = (800/100) * 20.7;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,60,len2,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2005: 20.7%",01,95); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len3 = (800/100) * 18.2;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,120,len3,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2008: 18.2%",01,155);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len4 = (800/100) * 15.7;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,180,len4,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2010: 15.7%",01,215);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len4 = (800/100) * 13.7;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,240,len4,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2011: 13.7%",01,275);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len5 = (800/100) * 12.8;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,300,len5,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2012: 12.8%",01,335);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len6 = (800/100) * 11.2;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,360,len6,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2013: 11.2%",01,395);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len7 = (800/100) * 9.9;
+                    ctx.font = "16px Arial";
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(0,420,len7,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2015: 9.9%",01,455);
+
+                    document.getElementById("mydata").innerHTML = "<p>hard coded code</p>";
+                    
+                    
+                }
+                
+                //Draws the graph with statistics of average rate for Sub Sahara Africa poverty
+                //This is the red graph
+                function SubSaharanAfrica() { 
+                    
+                    ctx.clearRect(0,0,800,800); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len1 = (800/100) * 56.4;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,0,len1,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2002: 56.4%",09,36); 
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len2 = (800/100) * 51.9;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,60,len2,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2005: 51.9%",09,95); 
+                    
+                   //Sets the size and colour of the bar and text with data
+                    len3 = (800/100) * 49.3;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,120,len3,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2008: 49.3%",09,155);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len4 = (800/100) * 47.8;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,180,len4,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2010: 47.8%",09,215);
+                    
+                   //Sets the size and colour of the bar and text with data
+                    len5 = (800/100) * 46.3;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,240,len5,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2011: 46.3%",09,275);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len6 = (800/100) * 45.2;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,300,len6,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2012: 45.2%",09,335);
+                    
+                   //Sets the size and colour of the bar and text with data
+                    len7 = (800/100) * 43.8;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,360,len7,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2013: 43.8%",09,395);
+                    
+                    //Sets the size and colour of the bar and text with data
+                    len8 = (800/100) * 42.4;
+                    ctx.font = "30px Arial";
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0,420,len8,50);
+                    ctx.fillStyle = "white";
+                    ctx.fillText("2015: 42.4%",02,455);
+
+                     
+                    document.getElementById("mydata").innerHTML = "<p>hard coded code</p>";                  
+                     
+                }
+
+                //Reloads window after button is clicked
+                window.location.reload(false);
+                 
+            </script>
+            
+            
+            <!-- Subtitle for pictures -->
+            <h2>Data and Images about poverty in Sub-Saharan Africa</h2>
+            
+            <!-- Links to image of poverty in Kenya -->
+            <img src="img/sub_saharan_africa_lags_behind.jpg" alt="Slum in Kenya" width="800" height="295">
+            
+            <!-- Description of the image -->
+            <p>Sub-Saharan Africa’s economic expansion has been remarkable over the last two decades but the institutions in the area lag behind and are unable to engineer economic transformation.</p>
+            
+            <!-- Images of poverty in Sub-Saharan Africa -->
+            <img src="img/africa_data.jpg" alt="Children in Poverty" width="420" height="395">
+            <img src="img/line_graph.jpg" alt="Poverty Rates" width="380" height="395">
+            
+            <!-- Description of the images -->
+            <p>These graphs show how the poverty trends Worldwide are decreasing rapidly but in Sub-Saharan Africa they are increasing slightly or decreasing slowly (depends on the region).</p>
+                                        
+            
+        </div> 
+           
+           
+        <!-- Creates sidebar division -->
+        <div id="sidebar">
+            
+           <!-- Subtitle -->     
+          <h2>Poverty Rates in Each Country</h2>
+
+          <!-- Instruction on what to do -->
+          <p>Enter the name of a country, such as "Canada", below to see the poverty rate in the country in various years.</p>
+
+          <!-- Interactive search where User inputs name of country and the poverty rates by year is displayed -->
+          Enter country name: <input text="text" id="mysearch"> 
+          <!-- Event button -->
+          <button onclick="goSearch()">Submit</button> 
+          <!-- Poverty rates by year is displayed  -->
+          <h3 id="results"></h3> 
+              
+ 
+     <script> 
+         
+         // Calls the function to search 
+         function goSearch() {
+             
+               // Variable keep user input
+               var myinput = document.getElementById("mysearch").value;
+               // Variable to keep results
+               var resultsdiv = document.getElementById("results");
+               var newstring = "";
+             
+               //Finds the data of the country         
+               for(Country=0; Country < data.length; Country++) {
+                
+                //Makes the search case insensitive and prints the data
+                 if (myinput.toUpperCase() == data[Country].Country.toUpperCase()) {
+                     newstring = newstring + data[Country].Year + ": " + data[Country].Rate + "% ";
+                     
+                   //Makes the results appear as a string
+                   resultsdiv.innerHTML = newstring;
+                     
+                 }
+             }                       
+         }   
+
+    </script>
+          
+            <!-- Subtitle -->
+            <h2>Additional Data and Images</h2> 
+            
+            <!-- Subtitle -->
+            <h3>Unicef</h3>
+            
+            <!-- Links to an image and gives the user an alert after clicking the link -->
+            <p> <a href="https://s32152.pcdn.co/wp-content/uploads/2015/01/ss-africa-moda-infographics.jpg"
+                    onClick="alert('Redirection to Access More Information');">unicef.org</a>
+                
+            <!-- Provides brief information on the image -->
+            <p>This image displays fascinating facts about poverty</p>
+            
+            <!-- Subtitle -->
+            <h3>United Nations</h3>
+            
+            <!-- Links to an image and gives the user an alert after clicking the link -->
+            <p> <a href="https://www.un.org/africarenewal/sites/www.un.org.africarenewal/files/styles/ar_main_story_big_picture/public/APN114438a.jpg?itok=6_2TzGIM"
+                    onClick="alert('Redirection to Image');"> www.un.org </a>
+                
+            <!-- Provides brief information on the image --> 
+            <p>This image displays a poor village in Sub-Saharan Africa</p>
+            
+            <!-- Subtitle -->
+            <h3>Microloan Foundation</h3>
+            <!-- Links to an image and gives the user an alert after clicking the link -->
+            <p> <a href="https://www.microloanfoundation.org.uk/wp-content/uploads/2019/02/world-bank-poverty-infographic-2018.jpg"
+                    onClick="alert('Redirection to Access More Information');"> microloanfoundation.org.uk</a></p>
+            
+             <!-- Provides brief information on the image --> 
+            <p>This image shows how many poor people reside in Sub-Saharan Africa</p>
+          
+        </div>
+        </div>
+    </body>
+</html>
