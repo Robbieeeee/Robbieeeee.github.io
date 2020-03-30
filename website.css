@@ -1,0 +1,90 @@
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #099463;  
+    
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #2196F3;
+  color: black;
+}
+
+ Style the "active" element to highlight the current page 
+.topnav a.active {
+  background-color: #2196F3;
+  color: #white; 
+}
+
+
+body {
+  width: 100%;
+  font-size: 1em;
+}
+
+div#main {
+  width: 85%;
+  margin: 0 auto 0 auto;
+}
+
+div#content {
+  width: 69%;
+  float: left;
+  margin-top: -1.5%;
+}
+
+}
+div#sidebar {
+  width: 29%;
+  float: right;
+  margin-bottom: -5%;
+}
+
+h2 {
+  font-family: Georgia, Times, serif;
+  color: #1824ad;
+}
+
+h1 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 26em;    
+  background-color: #1824ad;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 1px;
+  text-decoration: none;
+  font-size: 29px;
+}
+
+
+p{
+  font-family: Georgia, Times, serif;
+  font-size: 1.0em;
+  color: #333333;
+}
+
+button{font-family: Tahoma, Geneva, sans-serif;
+  font-size: 6em;    
+  background-color: #1824ad;
+  color: white;
+  text-align: center;
+  padding: 3px 1px;
+  text-decoration: none;
+  font-size: 19px;}
+
+
+}
